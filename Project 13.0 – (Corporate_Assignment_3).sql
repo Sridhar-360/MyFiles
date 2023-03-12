@@ -1,0 +1,11 @@
+select * from collegefinder.customers;
+use collegefinder;
+update customers set country='united kingdom' where country='Uk';
+update customers set country='us'where country='usa';
+select*from customers;
+delete from customers where city= 'Madrid' or city='vancouver';
+select * from customers;
+alter table customers modify CustomerID float;
+describe customers;
+alter table customers add Old_Customer_Flag varchar(10) default('yes');
+select * from customers;

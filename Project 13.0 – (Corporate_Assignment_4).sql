@@ -1,0 +1,13 @@
+select * from collegefinder.pets;
+select distinct age from pets;
+select distinct age, gender from pets;
+select name from pets where name like('%u%');
+select count(distinct kind) from pets;
+select kind, avg(age) from pets group by kind;
+select * from pets where Gender='Female' and Kind='Dog';
+select * from pets order by gender, age desc;
+select kind, max=(age) from pets group by kind having max(age)>13;
+select * from pets limit 15;
+select name from pets where name like '_____';
+select count(distinct age) from pets;
+select * from pets where age between 5 and 15;
